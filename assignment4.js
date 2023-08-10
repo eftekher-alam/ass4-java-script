@@ -29,15 +29,16 @@ function sortMaker(arr) {
 
 
 function findAddress(obj) {
-    if (!address.hasOwnProperty("street"))
-        address.street = "__";
-    if (!address.hasOwnProperty("house"))
-        address.house = "__";
-    if (!address.hasOwnProperty("society"))
-        address.society = "__";
+    if (!obj.hasOwnProperty("street"))
+        obj.street = "__";
+    if (!obj.hasOwnProperty("house"))
+        obj.house = "__";
+    if (!obj.hasOwnProperty("society"))
+        obj.society = "__";
 
-    return address.street + "," + address.house + "," + address.society;
+    return obj.street + "," + obj.house + "," + obj.society;
 }
+
 
 
 function canPay(changeArray, totalDue) {
